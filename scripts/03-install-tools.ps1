@@ -6,6 +6,12 @@ choco install -y firefox
 # https://chocolatey.org/packages/libreoffice-fresh
 choco install -y libreoffice-fresh
 
+# VSCode
+# https://chocolatey.org/packages/vscode
+choco install -y vscode
+# VSCode Extension
+cmd /C "C:\Program Files\Microsoft VS Code\bin\Code" --install-extension bmewburn.vscode-intelephense-client
+
 # Apache
 # https://brian.teeman.net/joomla/885-install-amp-on-windows-with-chocolatey
 # Note : WebPath : C:\Users\vagrant\AppData\Roaming\Apache24\htdocs
@@ -39,8 +45,6 @@ copy "C:\tools\php73\php.ini" "C:\tools\php73\backup.php.ini"
 (gc "C:\tools\php73\php.ini").replace(';extension=php_pdo_mysql.dll','extension=php_pdo_mysql.dll') | sc "C:\tools\php73\php.ini"
 (gc "C:\tools\php73\php.ini").replace(';extension=php_openssl.dll','extension=php_openssl.dll') | sc "C:\tools\php73\php.ini"
 
-# VSCode
-# https://chocolatey.org/packages/vscode
-choco install -y vscode
-# VSCode Extension
-cmd /C "C:\Program Files\Microsoft VS Code\bin\Code" --install-extension bmewburn.vscode-intelephense-client
+# Composer
+# https://chocolatey.org/packages/composer
+choco install -y composer --params '"/PHP=C:\tools\php73\"'
