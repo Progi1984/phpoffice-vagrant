@@ -56,3 +56,6 @@ choco install -y git
 
 # 7Zip
 choco install -y 7zip 
+
+# Office 2013
+choco install -y officeproplus2013 
