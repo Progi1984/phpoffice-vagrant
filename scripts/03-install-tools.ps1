@@ -51,3 +51,6 @@ choco install -y composer --params '"/PHP=C:\tools\php73\"'
 
 # GIT
 choco install -y git 
+
+# 7Zip
+choco install -y 7zip 
