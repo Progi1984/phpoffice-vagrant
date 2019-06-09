@@ -15,6 +15,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", path: "scripts/01-system.ps1", privileged: true, powershell_elevated_interactive: true
   config.vm.provision "shell", path: "scripts/02-install-chocolatey.ps1", privileged: true, powershell_elevated_interactive: true
   config.vm.provision "shell", path: "scripts/03-install-tools.ps1", privileged: true, powershell_elevated_interactive: true
+  config.vm.provision "shell", path: "scripts/04-git-clone.ps1", privileged: true, powershell_elevated_interactive: true
 
   config.vm.provider "virtualbox" do |v|
     v.gui = true
